@@ -48,13 +48,6 @@ model = Sequential([
 ])
 model.summary()
 
-# Adding layer via add() method
-model = Sequential()
-model.add(Dense(5, activation='relu', input_shape=(4,)))
-model.add(Dense(10, activation='relu'))
-model.add(Dense(3, activation='softmax'))
-model.summary()
-
 class MyModel(tf.keras.Model):
 
   def __init__(self):
