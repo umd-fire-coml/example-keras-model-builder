@@ -1,5 +1,5 @@
 import pytest
-from model import MyModel
+from src.model import MyModel
 from tensorflow.keras.models import Model
 
 
