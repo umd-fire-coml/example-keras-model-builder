@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: run_all_tests
         run: |
-          pip3 install -r requirements.txt
-          pip3 install -r test-requirements.txt
-          python3 -m pytest
+          sudo update-alternatives  --set python /usr/bin/python3.9
+          pip install -r requirements.txt
+          pip install -r test-requirements.txt
+          python -m pytest
