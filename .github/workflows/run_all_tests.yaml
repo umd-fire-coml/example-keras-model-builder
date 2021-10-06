@@ -13,7 +13,7 @@ jobs:
           apt-get install python3.9
           update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
           update-alternatives --set python /usr/bin/python3.9
-          python3.9 -m ensurepip
+          python3 -m ensurepip
           pip install -r requirements.txt
           pip install -r test-requirements.txt
           python3.9 -m pytest
