@@ -2,12 +2,11 @@ import pytest
 from src.model import MyModel
 from tensorflow.keras.models import Model
 
-
 @pytest.fixture
 def my_model():
     return MyModel()
 
-@pytest.fixture
+# @pytest.fixture
 # def my_dataset():
     # return your dataset object
 
